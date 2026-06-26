@@ -3,9 +3,13 @@
 ## Cryptographic Weaknesses in dha-encryption npm Package
 
 **Package:** [dha-encryption](https://www.npmjs.com/package/dha-encryption)
+
 **Affected versions:** ≤ 3.3.1
+
 **CWE:** CWE-916 (Use of Password Hash With Insufficient Computational Effort)
+
 **Vendor:** dha-sdk
+
 **Discovered by:** Aiden Mohan
 
 ---
