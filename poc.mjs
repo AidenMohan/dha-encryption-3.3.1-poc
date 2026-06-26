@@ -25,9 +25,6 @@ function bufToHex(buf) {
 // ─── 1. Demonstrate hardcoded salt + deterministic IV ────────────────────────
 
 async function demonstrateIVReuse() {
-  console.log("═══════════════════════════════════════════════════════════════");
-  console.log("  1 — DETERMINISTIC IV REUSE (AES-GCM nonce catastrophe)");
-  console.log("═══════════════════════════════════════════════════════════════\n");
 
   const pin = "5678";
 
@@ -53,9 +50,6 @@ async function demonstrateIVReuse() {
 // ─── 2. Encrypt sample data, then brute-force the PIN offline ────────────────
 
 async function demonstrateBruteForce() {
-  console.log("═══════════════════════════════════════════════════════════════");
-  console.log("  2 — FULL 4-DIGIT PIN BRUTE-FORCE (offline, ~13 s)");
-  console.log("═══════════════════════════════════════════════════════════════\n");
 
   // Simulate what dha-login does: encrypt a user profile under a PIN
   const victimPIN = "4092";
@@ -108,9 +102,6 @@ async function demonstrateBruteForce() {
 // ─── 3. Show iteration count vs OWASP minimum ───────────────────────────────
 
 function showIterationComparison() {
-  console.log("═══════════════════════════════════════════════════════════════");
-  console.log("  3 — ITERATION COUNT vs OWASP MINIMUM");
-  console.log("═══════════════════════════════════════════════════════════════\n");
 
   const actual = 1_337;
   const owasp = 600_000;
@@ -132,9 +123,6 @@ showIterationComparison();
 await demonstrateIVReuse();
 await demonstrateBruteForce();
 
-console.log("═══════════════════════════════════════════════════════════════");
-console.log("  SUMMARY");
-console.log("═══════════════════════════════════════════════════════════════\n");
 console.log("  The hardcoded salt, 1,337 PBKDF2 iterations, and");
 console.log("  deterministic IV derivation allow an attacker with access");
 console.log("  to ciphertext (device storage, backup, XSS) to recover");
