@@ -1,0 +1,13 @@
+{
+  "name": "cve-dha-encryption-poc",
+  "version": "1.0.0",
+  "description": "PoC for cryptographic weaknesses in dha-encryption <= 3.3.1",
+  "type": "module",
+  "scripts": {
+    "poc": "node poc.mjs"
+  },
+  "dependencies": {
+    "dha-encryption": "3.3.1"
+  },
+  "license": "MIT"
+}
