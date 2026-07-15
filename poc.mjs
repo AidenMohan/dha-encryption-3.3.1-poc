@@ -2,6 +2,7 @@
  * CVE PoC — dha-encryption <= 3.3.1
  * CWE-916: Use of Password Hash With Insufficient Computational Effort
  *
+ * yes i used ai to help make this, i am lazy
  * Demonstrates three cryptographic weaknesses in the dha-encryption npm package:
  *   1. Hardcoded default PBKDF2 salt ("h0n3yp0t!@")
  *   2. Only 1,337 PBKDF2-SHA256 iterations (OWASP minimum: 600,000)
