@@ -1,4 +1,8 @@
-# CVE-YYYY-NNNNN — dha-encryption ≤ 3.3.1
+# READ THE [WRITEUP](https://github.com/AidenMohan/DoD-Mishap)
+
+
+
+# dha-encryption ≤ 3.3.1
 
 ## Cryptographic Weaknesses in dha-encryption npm Package
 
@@ -107,11 +111,4 @@ Sample output:
 - [OWASP Password Storage Cheat Sheet — PBKDF2](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2)
 - [NIST SP 800-38D — AES-GCM](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf)
 - [dha-encryption on npm](https://www.npmjs.com/package/dha-encryption)
-
-## Timeline
-
-| Date | Event |
-|------|-------|
-| 2026-06-16 | Vulnerability reported via DoD VDP (HackerOne) |
-| 2026-06-26 | CVE requested from MITRE CNA-LR |
-| TBD | CVE assigned |
+- [writeup](https://github.com/AidenMohan/DoD-Mishap)
